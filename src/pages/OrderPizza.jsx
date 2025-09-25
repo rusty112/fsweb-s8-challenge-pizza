@@ -97,6 +97,7 @@ const OrderPizza = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Form geçerli mi?", isFormValid); // <-- BU SATIRI EKLEYİN
 
     // Formun geçerli olup olmadığını kontrol ediyoruz.
     if (!isFormValid) {
