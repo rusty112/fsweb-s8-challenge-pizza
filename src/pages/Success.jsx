@@ -23,7 +23,10 @@ const Success = () => {
   return (
     <div className="success-container" style={{ backgroundColor: '#CE2829', color: 'white', minHeight: '100vh', padding: '2rem' }}>
       <header className="success-header" style={{ textAlign: 'center' }}>
-        <h1 style={{ fontFamily: 'sans-serif', fontWeight: 'bold' }}>Teknolojik Yemekler</h1>
+        {/* BAŞLIĞI LİNK İLE SARDIK */}
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <h1 style={{ fontFamily: 'sans-serif', fontWeight: 'bold' }}>Teknolojik Yemekler</h1>
+        </Link>
       </header>
       <main className="success-main" style={{ textAlign: 'center', marginTop: '4rem' }}>
         <p style={{ fontStyle: 'italic', fontSize: '1.5rem' }}>lezzetin yolda</p>
