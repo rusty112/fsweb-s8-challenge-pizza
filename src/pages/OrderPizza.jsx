@@ -116,9 +116,9 @@ const OrderPizza = () => {
 
       console.log('Orijinal sipariş gönderiliyor:', orderPayload);
       const response = await axios.post(
-        'https://reqres.in/api/users',
-        orderPayload
-      );
+        'https://jsonplaceholder.typicode.com/posts', // <-- Bu güvenilir adresi kullanın
+       orderPayload
+         );
 
       console.log('API Yanıtı:', response.data);
       const orderWithResponse = {
